@@ -1,18 +1,24 @@
 from: https://vuejs-templates.github.io/webpack/structure.html
 
-├── build/                      # webpack config files
+├── build/                     # webpack config files
 │   └── ...
 ├── config/
-│   ├── index.js                # main project config
+│   ├── index.js               # main project config
 │   └── ...
 ├── src/
-│   ├── main.js                 # app entry file
-│   ├── App.vue                 # main app component
-│   ├── components/             # ui components
+│   ├── main.js                # app entry file
+│   ├── App.vue                # main app component
+│   ├── components             # ui components
 │   │   └── ...
-│   └── assets/                 # module assets (processed by webpack)
-│       └── ...
-├── static/                     # pure static assets (directly copied)
+│   └── assets                 # module assets (processed by webpack)
+|   └── strore
+|       ├── index.js           # 我们组装模块并导出 store 的地方
+|       ├── actions.js         # 根级别的 action
+|       ├── mutations.js       # 根级别的 mutation
+|       └── modules
+|           ├── cart.js        # 购物车模块
+|           └── products.js    # 产品模块
+├── static/                    # pure static assets (directly copied)
 ├── test/
 │   └── unit/                   # unit tests
 │   │   ├── specs/              # test spec files
