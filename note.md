@@ -66,3 +66,6 @@ index.html
 
 package.json
 包含所有构建依赖项和[构建命令](https://vuejs-templates.github.io/webpack/commands.html)的NPM包元文件。
+
+store:
+详见项目结构：https://vuex.vuejs.org/zh/guide/structure.html
